@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonDex Lite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pokemon-card">
+        <h1 class="pokemon-name">PokemonDex Lite</h1>
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
+        <button onclick="fetchPokemonData()">Fetch Pokemon Information</button>
+        <div id="pokemonInfoContainer" class="pokemon-info"></div>
+    </div>
+
+    <audio id="pokemonCry" preload="auto" style="display: none"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
